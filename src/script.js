@@ -37,7 +37,11 @@ $(document).ready(function () {
   	navigation: {
   	  nextEl: '.swiper-button-next-block',
   	  prevEl: '.swiper-button-prev-block',
-  	},
+    },
+    
+    pagination: {
+      el: '.swiper-pagination',
+    },
 
     keyboard: {
         enabled: true
