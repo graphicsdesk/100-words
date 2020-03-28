@@ -8,64 +8,28 @@
   <link rel="stylesheet" href="./styles.scss">
   <link rel="shortcut icon" href="https://www.columbiaspectator.com/pb/resources/img/CDS_Favicon.ico" type="image/x-icon"/>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../node_modules/swiper/css/swiper.min.css">
 </head>
 
 <body>
 
-  <include src="partials/navbar.html"></include>
-
-  <div class="story-top">
-    <each loop="item in top">
-      <switch expression="item.type">
-        <case n="'graphic'">
-          <div class="graphic">
-            <if condition="item.value.asset === 'graphic-name.html'">
-              <include src="graphic-name.html"></include>
-            </if>
-          </div>
-        </case>
-      </switch>
-    </each>
-  </div>
-
-  <if condition="USE_COVER_HED">    
-    <include src="partials/header-cover.html"></include>
-  </if>
-  <else>
-    <include src="partials/header.html"></include>
-  </else>
-
-  <div class="story">
-    <each loop="item in body">
-      <switch expression="item.type">
-        <case n="'text'">
-          <include src="partials/paragraph.html"></include>
-        </case>
-        <case n="'subhed'">
-          <include src="partials/subhed.html"></include>
-        </case>
-        <case n="'image'">
-          <include src="partials/image.html"></include>
-        </case>
-        <case n="'graphic'">
-          <div class="graphic">
-            <if condition="item.value.asset === 'graphic-name.html'">
-              <include src="graphic-name.html"></include>
-            </if>
-          </div>
-        </case>
-      </switch>
-    </each>
-  </div>
-
-  <div class="spectate-dev-footer">
-    <a href="{{ DOC_URL }}" target="_blank">Doc</a>
-  </div>
+  <!-- Slider main container -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+    </div>
+    <div class="swiper-button-next-block swp-btn" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+    <div class="swiper-button-prev-block swp-btn swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></div>
+</div>
   
-  <include src="partials/footer.html"></include>
-
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="../node_modules/swiper/js/swiper.min.js"></script>
   <script src="./script.js"></script>
-
   <script type="text/javascript">
       (function() {
           // only want one resizer on the page
@@ -138,6 +102,7 @@
       setTimeout(() => {
 
     }, 1000);
+    
   </script>
 </body>
 

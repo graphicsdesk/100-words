@@ -102,7 +102,6 @@ b {
 header {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 0 auto;
   padding: 36px 15px;
 
@@ -115,23 +114,34 @@ header {
   }
 
   .headline {
-    margin: 0;
-    margin-top: 50px;
-    font-size: 65px;
+    width:50vw;
+    margin-top: 10px;
+    font-size: 85px;
     line-height: 1;
-    font-weight: bold;
-    margin-bottom: 14px;
-    text-align: center;
-    font-weight: 700;
+    margin-left:2.5%;
+    margin-bottom: 40px;
     font-family: Playfair Display;
+    font-weight:400;
   }
 
-  .deck {
+  .deck1 {
     font-family: $graphik;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.45;
-    margin-bottom: 14px;
-    text-align: center;
+    margin-bottom: 40px;
+    margin-left:2.5%;
+    font-family: Roboto;
+    width:30vw;
+  }
+
+  .deck2 {
+    font-family: $graphik;
+    font-size: 30px;
+    line-height: 1.45;
+    margin-bottom: 40px;
+    margin-left:2.5%;
+    font-family: Roboto;
+    font-weight:500; 
   }
 
   .byline {
@@ -203,7 +213,6 @@ header {
 }
 
 .g-body {
-  max-width: $gbody-width;
   width: calc(100% - #{2 * $gbody-padding});
   margin-top: 0;
   margin-left: auto;
@@ -509,13 +518,4 @@ header {
     letter-spacing: 0.45px;
   }  
 
-  .article-credits::before {
-    display: block;
-    content: ' ';
-    width: 100px;
-    height: 1px;
-    background-color: #ccc;
-    margin-top: 29px;
-    margin-bottom: 30px;
-  }
 }

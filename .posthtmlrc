@@ -1,0 +1,11 @@
+{
+  "plugins": {
+    "posthtml-include": {
+      "root": "./src"
+    },
+    "posthtml-expressions": {
+      "root": "./src/partials",
+      "locals": {"top":{},"credits":"","footer":"","headline":"“A huge piece of my heart was left in New York City”:","deck1":"We asked how COVID-19 has impacted students’ lives.","deck2":"Here are their responses.","date":"March 30, 2020","byline":"Produced by Hong Sen Du and Raeedah Wahid. Illustrations by Liz Nichols","body":[{"type":"graphic","value":{"asset":""}}],"USE_EYE_NAV":false,"USE_COVER_HED":false,"DOC_URL":"https://docs.google.com/document/d/1ox04vuq7QK6u6XY9nOZ4cXYCApYhPbETyiEqZsolWhA/edit?usp=sharing"}
+    }
+  }
+}

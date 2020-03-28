@@ -1,5 +1,6 @@
 import enterView from 'enter-view';
 import textBalancer from 'text-balancer';
+import Swiper from 'swiper';
 
 import { USE_COVER_HED } from '../config.json';
 
@@ -27,3 +28,28 @@ export function hamburgerTrigger() {
 // Text balance headline and deck
 
 textBalancer.balanceText('.headline, .deck, .image-overlay .image-caption-text');
+
+var $ = require("../node_modules/jquery");
+
+$(document).ready(function () {
+  //initialize swiper when document ready
+  var mySwiper = new Swiper ('.swiper-container', {
+  	navigation: {
+  	  nextEl: '.swiper-button-next-block',
+  	  prevEl: '.swiper-button-prev-block',
+  	},
+
+    keyboard: {
+        enabled: true
+    },
+
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    // freeMode: true,
+    freeModeMomentum: false,
+    // freeModeSticky: true,
+    // cssMode: true,
+    slidesPerView: 'auto'
+  })
+});
