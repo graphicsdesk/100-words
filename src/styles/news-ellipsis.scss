@@ -57,6 +57,15 @@ header {
     margin: 0;
 }
 
+// Tiny stuff 
+
+.ab-article-content > article > p:first-child { // I should add to standard spectate things
+  margin-bottom: 0;
+}
+.ab-article-content > article > p:last-child { // I should add to standard spectate things
+  margin-bottom: 0;
+}
+
 // Added to remove navbar and basically everything lol
 
 section#top, section#bottom {
