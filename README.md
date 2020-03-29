@@ -1,4 +1,4 @@
-# SLUG
+# 100-words
 
 This story was created with [Spectate](https://github.com/spec-journalism/spectate).
 
