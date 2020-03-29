@@ -56,3 +56,34 @@ header {
 .row {
     margin: 0;
 }
+
+// Added to remove navbar and basically everything lol
+
+section#top, section#bottom {
+  display: none;
+}
+
+.pb-f-article-article-title, .pb-f-article-next-story, .pb-f-article-disqus-new {
+  display: none;
+}
+
+.pb-container {
+  width: 100%;
+
+  .pb-chain:nth-child(2) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.pb-f-article-article-body .ab-article-body {
+  margin-top: -10px !important;
+}
+
+.at-share-dock-outer {
+  display: none;
+}
+
+body {
+  padding-bottom: 0 !important;
+}
