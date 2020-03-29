@@ -1,6 +1,6 @@
 .PHONY: download build upload-assets deploy clean
 
-slug = TK
+slug = 100-words
 
 download:
 	node process/download-doc.js
