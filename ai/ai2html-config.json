@@ -18,6 +18,18 @@
       "family": "Roboto,arial,helvetica,sans-serif",
       "weight": "",
       "style": "italic"
+    },
+    {
+      "aifont": "Merriweather",
+      "family": "Merriweather, serif",
+      "weight": "",
+      "style": ""
+    },
+    {
+      "aifont": "Merriweather-Italic",
+      "family": "Merriweather, serif",
+      "weight": "700",
+      "style": "italic"
     }
   ]
 }
