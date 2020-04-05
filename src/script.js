@@ -73,3 +73,21 @@ $(document).ready(function () {
     slidesPerView: 'auto'
   })
 });
+
+var nineResponses = document.getElementsByClassName("g-pstyle2-1");
+[].slice.call( nineResponses ).forEach(function ( div ) {
+  div.innerHTML = "Here are 9 students’ responses."
+});
+
+console.log(document.getElementById("g-ai0-6"))
+document.getElementById("g-ai0-6").innerHTML = "<p class=\"g-pstyle6\">Illustrated by<span class=\"g-cstyle0\"> Liz Nichols</span></p><p class=\"g-pstyle6\"><span class=\"g-cstyle1\">Produced by</span> Hong Sen Du and Raeedah Wahid</p><p class=\"g-pstyle6\"><span class=\"g-cstyle1\">Edited by</span> Hsinyen Huang and Tamarah Wallace</p>"
+document.getElementById("g-ai1-6").innerHTML = "<p class=\"g-pstyle6\">Illustrated by<span class=\"g-cstyle0\"> Liz Nichols</span></p><p class=\"g-pstyle6\"><span class=\"g-cstyle1\">Produced by</span> Hong Sen Du and Raeedah Wahid</p><p class=\"g-pstyle6\"><span class=\"g-cstyle1\">Edited by</span> Hsinyen Huang and Tamarah Wallace</p>"
+document.getElementById("g-ai2-6-1").innerHTML = "<p class=\"g-pstyle6\">Illustrated by<span class=\"g-cstyle0\"> Liz Nichols</span></p><p class=\"g-pstyle6\"><span class=\"g-cstyle1\">Produced by</span> Hong Sen Du and Raeedah Wahid</p><p class=\"g-pstyle6\"><span class=\"g-cstyle1\">Edited by</span> Hsinyen Huang and Tamarah Wallace</p>"
+document.getElementById("g-ai2-6-1").style.right = "5%";
+document.getElementById("g-ai2-6-1").style.width = "100%";
+document.getElementById("g-ai0-6").style.width = "100%";
+document.getElementById("g-ai0-6").style.top = "91%";
+
+if (window.matchMedia("(max-width: 800px)").matches && window.matchMedia("(min-width: 600px)").matches && window.matchMedia("(min-height: 800px)").matches) { 
+  document.getElementById("g-ai2-6-1").style.top = "120%";
+} 
