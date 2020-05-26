@@ -76,13 +76,25 @@ $(document).ready(function () {
 
 var nineResponses = document.getElementsByClassName("g-pstyle2-1");
 [].slice.call( nineResponses ).forEach(function ( div ) {
-  div.innerHTML = "Here are 9 students’ responses."
+  div.innerHTML = "Here are nine students’ responses."
 });
 
-console.log(document.getElementById("g-ai0-6"))
 document.getElementById("g-ai0-6").innerHTML = "<p class=\"g-pstyle6\">Illustrated by<span class=\"g-cstyle0\"> Liz Nichols</span></p><p class=\"g-pstyle6\"><span class=\"g-cstyle1\">Produced by</span> Hong Sen Du and Raeedah Wahid</p><p class=\"g-pstyle6\"><span class=\"g-cstyle1\">Edited by</span> Hsinyen Huang and Tamarah Wallace</p>"
 document.getElementById("g-ai1-6").innerHTML = "<p class=\"g-pstyle6\">Illustrated by<span class=\"g-cstyle0\"> Liz Nichols</span></p><p class=\"g-pstyle6\"><span class=\"g-cstyle1\">Produced by</span> Hong Sen Du and Raeedah Wahid</p><p class=\"g-pstyle6\"><span class=\"g-cstyle1\">Edited by</span> Hsinyen Huang and Tamarah Wallace</p>"
 document.getElementById("g-ai2-6-1").innerHTML = "<p class=\"g-pstyle6\">Illustrated by<span class=\"g-cstyle0\"> Liz Nichols</span></p><p class=\"g-pstyle6\"><span class=\"g-cstyle1\">Produced by</span> Hong Sen Du and Raeedah Wahid</p><p class=\"g-pstyle6\"><span class=\"g-cstyle1\">Edited by</span> Hsinyen Huang and Tamarah Wallace</p>"
+
+document.querySelectorAll("#g-ai0-5")[3].innerHTML = "<p>&mdash;Adele Chi, BC &rsquo;22</p>"
+document.querySelectorAll("#g-ai1-5")[3].innerHTML = "<p>&mdash;Adele Chi, BC &rsquo;22</p>"
+document.querySelectorAll("#g-ai2-5-4")[0].innerHTML = "<p>&mdash;Adele Chi, BC &rsquo;22</p>"
+
+document.querySelectorAll("#g-ai0-4")[6].innerHTML = "<p>&mdash;Mary Zaradich, SEAS &rsquo;22</p>"
+document.querySelectorAll("#g-ai2-5")[3].innerHTML = "<p class=\"g-pstyle1\">&mdash;Mary Zaradich, </p><p class=\"g-pstyle1\">SEAS &rsquo;22</p>"
+document.querySelectorAll("#g-ai2-4-8")[0].innerHTML = "<p class=\"g-pstyle1\">&mdash;Mary Zaradich, </p><p class=\"g-pstyle1\">SEAS &rsquo;22</p>"
+
+document.querySelectorAll("#g-ai0-5")[5].innerHTML = "<p class=\"g-pstyle1\">&mdash;Kristoff Smith, CC &rsquo;22</p>"
+document.querySelectorAll("#g-ai1-5")[5].innerHTML = "<p class=\"g-pstyle1\">&mdash;Kristoff Smith, CC &rsquo;22</p>"
+document.querySelectorAll("#g-ai2-5")[4].innerHTML = "<p>&mdash;Kristoff Smith, CC &rsquo;22</p>"
+
 document.getElementById("g-ai2-6-1").style.right = "5%";
 document.getElementById("g-ai2-6-1").style.width = "100%";
 document.getElementById("g-ai0-6").style.width = "100%";
