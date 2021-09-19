@@ -1,5 +1,5 @@
-import Swiper from "swiper";
-import "swiper/css/swiper.css";
+import Swiper from "swiper/swiper-bundle.min.js";
+import "swiper/swiper-bundle.css";
 
 // Fade in navbar at scroll trigger
 
