@@ -82,6 +82,6 @@ document.getElementById("g-ai2-6-1").style.width = "100%";
 document.getElementById("g-ai0-6").style.width = "100%";
 document.getElementById("g-ai0-6").style.top = "91%";
 
-if (window.matchMedia("(max-width: 800px)").matches && window.matchMedia("(min-width: 600px)").matches && window.matchMedia("(min-height: 800px)").matches) { 
-  document.getElementById("g-ai2-6-1").style.top = "120%";
-} 
+// if (window.matchMedia("(max-width: 800px)").matches && window.matchMedia("(min-width: 600px)").matches && window.matchMedia("(min-height: 800px)").matches) { 
+//   document.getElementById("g-ai2-6-1").style.top = "120%";
+// } 
