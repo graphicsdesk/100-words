@@ -1,4 +1,3 @@
-import textBalancer from 'text-balancer';
 import Swiper from "swiper";
 import "swiper/css/swiper.css";
 
@@ -11,10 +10,6 @@ const navbar = document.getElementById('navbar');
 export function hamburgerTrigger() {
   navbar.classList.toggle('show-nav-links');
 }
-
-// Text balance headline and deck
-
-textBalancer.balanceText('.headline, .deck, .image-overlay .image-caption-text');
 
 // Disable stylesheets on contributor page. Stylesheets are included in the
 // server-side render and styles in files like news-ellipsis.scss
