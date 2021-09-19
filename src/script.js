@@ -1,6 +1,8 @@
 import enterView from 'enter-view';
 import textBalancer from 'text-balancer';
-import Swiper from 'swiper';
+import Swiper from "swiper";
+import "swiper/css/swiper.css";
+
 
 import { USE_COVER_HED } from '../config.json';
 
